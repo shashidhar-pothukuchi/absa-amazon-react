@@ -1,0 +1,12 @@
+
+.aspect-box{
+    margin: "40px 40px 40px 40px";
+}
+
+.asp-percent{
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    vertical-align: top; font-size: 12px;
+    margin-left: 100px;
+}

@@ -1,0 +1,35 @@
+
+.container{
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 700px;
+    height: 200px;
+    margin: auto;
+    margin-top:100px;
+    text-align: center;
+}
+h1{
+    font-size: 40px;
+    text-align: center;
+    margin: 50px;
+}
+.detailtable{
+    font-size: 20px;
+}
+
+.searchbtn{
+    margin-top:50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  tr {
+    height: 10px;
+  }
+  
+  tr td {
+     height: auto !important;
+  }
