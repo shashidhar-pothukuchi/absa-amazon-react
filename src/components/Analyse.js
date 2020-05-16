@@ -19,7 +19,7 @@ export class Analyse extends Component {
     render(){
         if(this.props.loading){
             return(  
-                 <Loader message={"Scraping Reviews"}></Loader>
+                 <Loader message={"Getting Reviews"}></Loader>
                  )
         }
         if(this.props.anloading){
