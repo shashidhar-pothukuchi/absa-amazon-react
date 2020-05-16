@@ -27,8 +27,8 @@ setAnloading = (val)=>{
 setProductData = (data) =>{
   this.setState({product_data : data});
   this.setState({id:data.id});
-  console.log(this.state.id);
-  console.log(this.state.product_data);
+  //console.log(this.state.id);
+  //console.log(this.state.product_data);
   this.setLoading(false);
 } 
 

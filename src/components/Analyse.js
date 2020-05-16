@@ -19,6 +19,7 @@ export class Analyse extends Component {
         }
     return (
         <div>
+            <Link ></Link>
             <h1>Analyse</h1>
             <Aspiterator data = {this.props.reviews} ></Aspiterator>
         </div>
