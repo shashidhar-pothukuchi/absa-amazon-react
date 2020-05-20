@@ -101,7 +101,7 @@ const Aspect = (props) => {
         <div className="asp-percent" style={{ width: "13%" }}>
         <ChangingProgressProvider values={[0,props.aspects.percent[2]]}>
         {percentage => (
-         <CircularProgressbar value={percentage} text={`${props.aspects.percent[1]}%`} 
+         <CircularProgressbar value={percentage} text={`${props.aspects.percent[2]}%`} 
          styles={buildStyles({
            textSize: "25px",
            pathColor: "#212121",
@@ -121,7 +121,7 @@ const Aspect = (props) => {
         <div className="asp-percent" style={{ width: "13%" }}>
         <ChangingProgressProvider values={[0,props.aspects.percent[1]]}>
         {percentage => (
-         <CircularProgressbar value={percentage} text={`${props.aspects.percent[2]}%`} 
+         <CircularProgressbar value={percentage} text={`${props.aspects.percent[1]}%`} 
          styles={buildStyles({
            textSize: "25px",
            pathColor: "#f50057",

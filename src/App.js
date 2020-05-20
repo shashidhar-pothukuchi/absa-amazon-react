@@ -14,6 +14,7 @@ class App extends Component{
     product_data:[],
     loading:false,
     anloading:false,
+    port : "https://localhost:5000"
 }
 
 setLoading = (val)=>{
@@ -56,11 +57,11 @@ addReviews = (data) =>{
         <Router>
     <div className="App">
       <Route exact path = '/' render={props =>(
-        <Home  addData={this.setProductData} setLoading={this.setLoading} loading = {this.state.loading}></Home>
+        <Home  port ={this.state.port} addData={this.setProductData} setLoading={this.setLoading} loading = {this.state.loading}></Home>
       )}/>
       </div>
     <Route path = "/details" render={props =>(
-      <Details data ={this.state.product_data} loading = {this.state.loading} 
+      <Details port={this.state.port} data ={this.state.product_data} loading = {this.state.loading} 
       setLoading={this.setLoading} addReviews={this.addReviews} setAnloading = {this.setAnloading}></Details>
     )} />
     <Route path = "/analyse" render={props =>(

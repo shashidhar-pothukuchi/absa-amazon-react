@@ -14,6 +14,33 @@ import axios from 'axios';
 
 export class Details extends Component {
     
+    displayName = () =>{
+        if(this.props.data.name !== ''){
+            return(
+     <TableRow>
+      <TableCell component="th" scope="row" style = {{fontSize : "20px"}}>
+          Name : 
+      </TableCell>
+      <TableCell align="center" style = {{fontSize : "20px"}}>{this.props.data.name}</TableCell>
+    </TableRow>)
+    }
+    }
+
+    displayPrice = () =>{
+        if(this.props.data.price !== ''){
+            return(
+            <TableRow>
+              <TableCell component="th" scope="row" style = {{fontSize : "20px"}}>
+                  Price :
+              </TableCell>
+              <TableCell align="center" style = {{fontSize : "20px"}}>{this.props.data.price}</TableCell>
+            </TableRow>
+            )
+        }
+    }
+
+
+
      onConfirm = (e) =>{
         this.props.setLoading(true);
         console.log('passing data');
@@ -32,18 +59,8 @@ export class Details extends Component {
             <h1>Product Details</h1>
             <Table size="Large" aria-label="simple table" style = {{fontSize : "20px"}}>
             <TableBody>
-             <TableRow>
-              <TableCell component="th" scope="row" style = {{fontSize : "20px"}}>
-                  Name : 
-              </TableCell>
-              <TableCell align="center" style = {{fontSize : "20px"}}>{this.props.data.name}</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell component="th" scope="row" style = {{fontSize : "20px"}}>
-                  Price :
-              </TableCell>
-              <TableCell align="center" style = {{fontSize : "20px"}}>{this.props.data.price}</TableCell>
-            </TableRow>
+                {this.displayName()}
+                {this.displayPrice()}
             <TableRow>
               <TableCell component="th" scope="row" style = {{fontSize : "20px"}}>
                   Product ID : 
